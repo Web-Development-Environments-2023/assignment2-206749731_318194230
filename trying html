@@ -1,0 +1,20 @@
+<div id="configuration" class="screen">
+  <audio id="bgMusic" src="Source/space-120280.mp3" loop></audio>
+  <section class="hero-section overflow-hidden">
+    <div class="hero-slider owl-carousel">
+       <div class="hero-item set-bg d-flex align-items-center justify-content-center text-center" >
+          <div class="container">
+             <h1 style="font-style: italic;color:white">Choose with which key you want to shoot:</h1>
+             <p></p>
+             <div class="form-group">
+              <input type="text" class="form-control" id="shooting-key" placeholder="Your Key" width="100" height="100">
+            </div>
+            <img src="img/games/keyboard.png" width = "500" height="300" >
+             <button class="btn btn-primary" onclick="showScreen('game'); playMusic();">Start Game<img src="img/icons/double-arrow.png"></button>
+             
+          </div>
+       </div>
+    </div>
+ </section>
+  
+</div>
