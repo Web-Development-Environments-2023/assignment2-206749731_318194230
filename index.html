@@ -456,9 +456,9 @@
   </style>
   <!-- <button id="newGameButton">New Game</button> -->
   
-  <!-- <button id="logoutButton" onclick="newGame();showScreen('welcome')">Logout</button> -->
-  <input id="startButton" style ="display: none;"type="button" value="New Game">
-  <input id="logoutButton" type="button" value="Logout">
+  <!-- <button id="logoutButton" IsTabStop="False" onclick="newGame();showScreen('welcome')">Logout</button> -->
+  <input id="startButton" IsTabStop="False" style ="display: none;"type="button" value="New Game">
+  <input id="logoutButton" IsTabStop="False" type="button" value="Logout">
   <p style="position: fixed; z-index: 12; color: white; left: 10px; top: 60px; font-size: 25px;">
     <span>Score:</span> <span id="scoreElement">0</span>
     </br><img src="img/games/timer1.png" style="width:50px; height: 50px;"> <span id="timeRemainingElement">0</span></span>
@@ -470,7 +470,7 @@
       <img id ="img3" src="img/games/fullHeart.png" class="heart-glow" style="display: inline-block; width: 30px; height: 30px; margin-left: 10px;">
     </span>
     <span>
-      <input id="startGameButton" style ="color: #fff;; background-color: #e91212; ;" type="button" value="Start Game">
+      <input id="startGameButton" IsTabStop="False" style ="color: #fff;; background-color: #e91212; ;" type="button" value="Start Game">
     </span>
     <span>
       
