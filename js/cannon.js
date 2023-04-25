@@ -38,7 +38,7 @@ function updateTime(){
   ++timerCount; // increment the timer event counter
 
   // if one second has passed
-  if (TIME_INTERVAL * timerCount >= 100)
+  if (TIME_INTERVAL * timerCount >= 80)
   {
      --timeLeft; // decrement the timer
      ++timeElapsed; // increment the time elapsed
