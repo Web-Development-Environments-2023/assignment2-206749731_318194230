@@ -36,7 +36,7 @@ Bootstrap
 # Credits
 The game was created by Keren Gorelik and Ori Fadida.
 
-#License
+# License
 This project is licensed under the MIT License.
 
 
