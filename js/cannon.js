@@ -29,7 +29,7 @@ var timerCount=0;
 timeRemainingElement.innerHTML = timeLeft+"sec"
 const lowerSurfaceHeight = canvas.height * 0.4;
 const lowerSurfaceTop = canvas.height - lowerSurfaceHeight;
-const monsterImageSrcs = ['mon1.png',  'mon2.jpeg',  'mon3.jpeg',  'mon4.jpg',];
+const monsterImageSrcs = ['images/mon1.png',  'images/mon2.jpeg',  'images/mon3.jpeg',  'images/mon4.jpg',];
 
 function updatetimeLeft(){
   timeLeft=180;
@@ -363,7 +363,7 @@ player.image.onload = function() {
 }
 
 
-player.image.src = 'astro.jpg'///////////////////////////////////////////////////////////////////////////
+player.image.src = 'images/astro.jpg'///////////////////////////////////////////////////////////////////////////
 //player.image.src = 'img/games/astro.jpg'
 
 var projectiles = [];
