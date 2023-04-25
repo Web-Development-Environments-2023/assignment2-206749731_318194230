@@ -321,7 +321,7 @@ class Grid {
       this.position = position;
       this.velocity = velocity;
       this.image = new Image();
-      this.image.src = 'rock1.png';
+      this.image.src = 'images/rock1.png';
       
       this.radius = 40;
     }
@@ -343,7 +343,7 @@ function Projectile({position,velocity}) {
    this.position = position;
    this.velocity = velocity;
    this.image = new Image();
-   this.image.src = 'elec.jpg';
+   this.image.src = 'images/elec.jpg';
    this.radius = 25;
  }
  
