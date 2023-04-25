@@ -25,6 +25,9 @@ The "Login" section includes a form for logging in to an existing account to pla
 # About
 The "About" section includes information about the challenges of creating a game and instructions for playing the game.
 
+#Game
+Thw "Game" section  contains canvas elements for the game. The startGameButton and logoutButton are input buttons that trigger the start of the game and reload the page, respectively.
+
 # Technologies Used
 HTML
 CSS
