@@ -29,7 +29,7 @@ var timerCount=0;
 timeRemainingElement.innerHTML = timeLeft+"sec"
 const lowerSurfaceHeight = canvas.height * 0.4;
 const lowerSurfaceTop = canvas.height - lowerSurfaceHeight;
-const monsterImageSrcs = ['mon1.png',  'mon2.jpeg',  'mon3.jpeg',  'mon4.jpg',];
+const monsterImageSrcs = ['images/mon1.png',  'images/mon2.jpeg',  'images/mon3.jpeg',  'images/mon4.jpg',];
 
 function updatetimeLeft(){
   const timerInput = document.getElementById('timer-input');
@@ -62,7 +62,7 @@ function updateTime(){
         Message.innerHTML = "Time's Up! You can do better. Your Score is:"+score;
       }
       // Message.innerHTML = "You Lost and your score is:"+score;
-      EndGame('gameover.webp');
+      EndGame('images/gameover.webp');
  } 
 }
 
@@ -325,7 +325,7 @@ class Grid {
       this.position = position;
       this.velocity = velocity;
       this.image = new Image();
-      this.image.src = 'rock1.png';
+      this.image.src = 'images/rock1.png';
       
       this.radius = 40;
     }
@@ -347,7 +347,7 @@ function Projectile({position,velocity}) {
    this.position = position;
    this.velocity = velocity;
    this.image = new Image();
-   this.image.src = 'elec.jpg';
+   this.image.src = 'images/elec.jpg';
    this.radius = 25;
  }
  
@@ -461,7 +461,7 @@ function checkCollision(projectile, monster) {
   player.position.y = canvas.height - 180;/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   window.clearInterval(intervalId);
 
-  setGameOverBackground('gameover.webp')
+  setGameOverBackground('images/gameover.webp')
   stopMusicGame();
   showScreen('configuration');
   
