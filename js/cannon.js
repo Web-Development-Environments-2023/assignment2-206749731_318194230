@@ -29,7 +29,7 @@ var timerCount=0;
 timeRemainingElement.innerHTML = timeLeft+"sec"
 const lowerSurfaceHeight = canvas.height * 0.4;
 const lowerSurfaceTop = canvas.height - lowerSurfaceHeight;
-const monsterImageSrcs = ['images/mon1.png',  'images/mon2.jpeg',  'images/mon3.jpeg',  'images/mon4.jpg',];
+const monsterImageSrcs = ['mon1.png',  'mon2.jpeg',  'mon3.jpeg',  'mon4.jpg',];
 
 function updatetimeLeft(){
   const timerInput = document.getElementById('timer-input');
@@ -37,6 +37,7 @@ function updatetimeLeft(){
   timeLeft = inputTime ? inputTime : 180; // if input is empty or NaN, set to default value of 180
   timeRemainingElement.innerHTML = timeLeft + "sec";
 }
+
 function updateTime(){
   ++timerCount; // increment the timer event counter
 
@@ -324,7 +325,7 @@ class Grid {
       this.position = position;
       this.velocity = velocity;
       this.image = new Image();
-      this.image.src = 'images/rock1.png';
+      this.image.src = 'rock1.png';
       
       this.radius = 40;
     }
@@ -346,7 +347,7 @@ function Projectile({position,velocity}) {
    this.position = position;
    this.velocity = velocity;
    this.image = new Image();
-   this.image.src = 'images/elec.jpg';
+   this.image.src = 'elec.jpg';
    this.radius = 25;
  }
  
@@ -782,6 +783,7 @@ document.getElementById("startButton").addEventListener("click", function() {
     stopMusicGame();
     showScreen('welcome')
     });
+
 
 
 
