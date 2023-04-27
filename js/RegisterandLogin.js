@@ -129,6 +129,65 @@ function loginUser() {
   }
   
  
+  ////////////////////
+// Add an event listener to the password input field
+document.getElementById("login-password").addEventListener("input", function() {
+  var password = this.value;
+  var errorMessage = document.getElementById("login-error-message");
+
+  if (password === "testuser") {
+      errorMessage.innerHTML = "";
+      cancelHelp();
+  } else {
+      errorMessage.innerHTML = "Invalid password.";
+      help();
+  }
+  
+});
+
+
+function cancelHelp() {
+  const configButton = document.querySelector('.config-button');
+
+  configButton.removeEventListener('mousemove', handleMouseMove);
+  configButton.removeEventListener('mouseenter', handleMouseEnter);
+  configButton.removeEventListener('mouseleave', handleMouseLeave);
+}
+
+function handleMouseMove(event) {
+  const buttonRect = event.currentTarget.getBoundingClientRect();
+  const cursorX = event.clientX - buttonRect.left;
+  const cursorY = event.clientY - buttonRect.top;
+  const maxOffset = 750;
+  const offsetX = (cursorX / buttonRect.width - 0.5) * maxOffset;
+  const offsetY = (cursorY / buttonRect.height - 0.5) * maxOffset;
+  event.currentTarget.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+}
+
+function handleMouseEnter(event) {
+  const buttonRect = event.currentTarget.getBoundingClientRect();
+  const direction = Math.random() > 0.5 ? 1 : -1;
+  const distance = Math.floor(Math.random() * 750);
+  const newX = parseInt(event.currentTarget.style.left) + (direction * distance);
+  event.currentTarget.style.left = `${newX}px`;
+}
+
+function handleMouseLeave(event) {
+  event.currentTarget.style.transform = 'translate(0, 0)';
+  event.currentTarget.style.left = '';
+}
+
+function help() {
+  const configButton = document.querySelector('.config-button');
+
+  configButton.addEventListener('mousemove', handleMouseMove);
+  configButton.addEventListener('mouseenter', handleMouseEnter);
+  configButton.addEventListener('mouseleave', handleMouseLeave);
+}
+
+  
+ 
+  
   
   
 
