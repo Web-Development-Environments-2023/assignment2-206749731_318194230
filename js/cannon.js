@@ -32,7 +32,10 @@ const lowerSurfaceTop = canvas.height - lowerSurfaceHeight;
 const monsterImageSrcs = ['images/mon1.png',  'images/mon2.jpeg',  'images/mon3.jpeg',  'images/mon4.jpg',];
 
 function updatetimeLeft(){
-  timeLeft=180;
+  const timerInput = document.getElementById('timer-input');
+  const inputTime = parseInt(timerInput.value);
+  timeLeft = inputTime ? inputTime : 180; // if input is empty or NaN, set to default value of 180
+  timeRemainingElement.innerHTML = timeLeft + "sec";
 }
 function updateTime(){
   ++timerCount; // increment the timer event counter
