@@ -14,8 +14,7 @@ Keren Gorelik (206749731)
 Ori Fadida (318194230)
 # Home
 The "Home" section includes a hero section with an animated header and two buttons: "Register" and "Login". Clicking on the buttons will take you to the corresponding sections.
-![image](https://user-images.githubusercontent.com/74565511/234260960-aae43459-6216-4578-99ef-ba25fe44ad05.png)
-
+![image](https://user-images.githubusercontent.com/74565511/234961882-4700e352-612c-418d-9f7c-8f85099fa5b4.png)
 # Register
 The "Register" section includes a form for creating a new account to play the game. The form includes fields for username, password, first name, last name, email, birthdate, and terms and conditions. The "Create Account" button is disabled until the user agrees to the terms and conditions.
 
